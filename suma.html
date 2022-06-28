@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+<div class="container">
+  <py-script src="suma.py">  </py-script>
+  <h2>SUMA DE 2 NUMEROS</h2>
+  <p>La suma de los 2 numeros es: <span id="output"></span></p>
+    
+  <label for="inputtext1">Ingresar el Numero 1: </label>
+  <div>
+    <input type="text" id="inputtext1">
+  </div>
+
+  <label for="inputtext2">Ingresar el Numero 2: </label>
+  <div>
+    <input type="text" id="inputtext2">
+  </div>
+
+  <div>
+    <button id="run" type="button" pys-onclick="suma" style="width: 25%;">Sumar</button>
+    <button id="clear" type="button" pys-onclick="clear" style="width: 25%;">Limpiar</button>
+  </div>
+</div>
+</html>

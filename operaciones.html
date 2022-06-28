@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+<div class="container">
+    <py-script src="operaciones.py">  </py-script>
+    <label for="inputtext1">Numero 1: </label>
+    <div>
+        <input type="text" id="inputtext1">
+    </div>
+
+    <label for="inputtext2">Numero 2: </label>
+    <div>
+        <input type="text" id="inputtext2">
+    </div>
+    
+    <div>
+        <p>La suma de los 2 numeros es: <span id="salidasuma"></span></p>
+        <p>La resta de los 2 numeros es: <span id="salidaresta"></span></p>
+        <p>La multiplicacion de los 2 numeros es: <span id="salidamultiplicacion"></span></p>
+        <p>La division de los 2 numeros es: <span id="salidadivision"></span></p>
+    </div>
+    <br>
+    <div>
+        <button id="run" type="button" pys-onclick="Calcular" style="width: 25%;">Calcular</button>
+        <button id="clear" type="button" pys-onclick="clear" style="width: 25%;">Limpiar</button>
+    </div>
+</div> 
+</html>
